@@ -1,0 +1,187 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "clinic-app-static-angular-V5": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/clinic-app-static-angular-v5",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": [
+              "node_modules/lazyloadxt/dist/jquery.lazyloadxt.min.js",
+              {
+                "input": "src/assets/js/jquery.min.js",
+                "inject": false,
+                "bundleName": "theme-jquery"
+              },
+              {
+                "input": "src/assets/js/popper.min.js",
+                "inject": false,
+                "bundleName": "theme-popper"
+              },
+              {
+                "input": "src/assets/js/bootstrap.min.js",
+                "inject": false,
+                "bundleName": "theme-bootstrap"
+              },
+              {
+                "input": "src/assets/js/jquery.waypoints.min.js",
+                "inject": false,
+                "bundleName": "theme-jquery.waypoints"
+              },
+              {
+                "input": "src/assets/js/jquery.appear.js",
+                "inject": false,
+                "bundleName": "theme-jquery.appear"
+              },
+              {
+                "input": "src/assets/js/numinate.min.js",
+                "inject": false,
+                "bundleName": "theme-numinate"
+              },
+              {
+                "input": "src/assets/js/swiper.min.js",
+                "inject": false,
+                "bundleName": "theme-swiper"
+              },
+              {
+                "input": "src/assets/js/jquery.magnific-popup.min.js",
+                "inject": false,
+                "bundleName": "theme-jquery.magnific-popup"
+              },
+              {
+                "input": "src/assets/js/circle-progress.js",
+                "inject": false,
+                "bundleName": "theme-circle-progress"
+              },
+              {
+                "input": "src/assets/js/jquery.countdown.min.js",
+                "inject": false,
+                "bundleName": "theme-jquery.countdown"
+              },
+              {
+                "input": "src/assets/js/aos.js",
+                "inject": false,
+                "bundleName": "theme-aos"
+              },
+              {
+                "input": "src/assets/js/gsap.js",
+                "inject": false,
+                "bundleName": "theme-gsap"
+              },
+              {
+                "input": "src/assets/js/ScrollTrigger.js",
+                "inject": false,
+                "bundleName": "theme-ScrollTrigger"
+              },
+              {
+                "input": "src/assets/js/SplitText.js",
+                "inject": false,
+                "bundleName": "theme-SplitText"
+              },
+              {
+                "input": "src/assets/js/magnetic.js",
+                "inject": false,
+                "bundleName": "theme-magnetic"
+              },
+              {
+                "input": "src/assets/js/gsap-animation.js",
+                "inject": false,
+                "bundleName": "theme-gsap-animation"
+              },
+              {
+                "input": "src/assets/js/isotope.pkgd.min.js",
+                "inject": false,
+                "bundleName": "theme-iso-top"
+              },
+              {
+                "input": "src/assets/js/switcher.js",
+                "inject": false,
+                "bundleName": "theme-switcher"
+              }
+            ]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "clinic-app-static-angular-V5:build:production"
+            },
+            "development": {
+              "buildTarget": "clinic-app-static-angular-V5:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "clinic-app-static-angular-V5:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "tsconfig.spec.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
+  }
+}

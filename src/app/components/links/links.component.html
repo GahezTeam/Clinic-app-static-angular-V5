@@ -1,0 +1,77 @@
+  <div class="navbar-header">
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button">
+      <i class="pbmit-base-icon-menu-1"></i>
+    </button>
+  </div>
+  <div class="pbmit-mobile-menu-bg"></div>
+  <div class="collapse navbar-collapse clearfix show" id="pbmit-menu-1">
+    <div class="pbmit-menu-wrap">
+											<span class="closepanel" (click)="closePanel()">
+												<svg class="qodef-svg--close qodef-m" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 26.163 26.163">
+													<rect width="70" height="1" transform="translate(0.707) rotate(45)"></rect>
+													<rect width="70" height="1" transform="translate(0 25.456) rotate(-45)"></rect>
+												</svg>
+											</span>
+      <ul class="navigation clearfix">
+        <li class="active">
+          <a routerLink="/home">الرئيسية</a>
+        </li>
+        <li class="dropdown">
+          <a href="#">الصفحات</a>
+          <ul>
+            <li><a routerLink="/about-us">من نحن</a></li>
+            <li><a routerLink="/our-history">تاريخنا</a></li>
+            <li><a routerLink="/classes">مواعيد العمل</a></li>
+            <li><a routerLink="/doctors/details">أعضاء الفريق الطبى</a></li>
+            <li><a routerLink="/team-single-detail">الدكترو احمد محمد</a></li>
+            <li><a routerLink="/make-appointments">حجز موعد</a></li>
+            <li><a routerLink="/faq">الأسئلة الشائعة</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">الخدمات</a>
+          <ul>
+            <li><a routerLink="/service-details">تفاصيل الخدمة</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">المعرض</a>
+          <ul>
+            <li class="dropdown">
+              <a href="#">طريق عرض المعرض</a>
+              <ul>
+                <li><a routerLink="/masonry-grid-col-4">عرض المعرض 4 أعمدة</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">عرض شبكي</a>
+              <ul>
+                <li><a routerLink="/portfolio-grid-col-4">عرض شبكى 4 اعمدة</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">نمط التفاصيل الفردية</a>
+              <ul>
+                <li><a routerLink="/departments/details">نمط التفاصيل الفردية 01</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">الأخبار</a>
+          <ul>
+            <li class="dropdown">
+              <a href="#">عرض شبكى</a>
+              <ul>
+                <li><a routerLink="/blog-grid-4">عرض شبكى 4 اعمدة</a></li>
+              </ul>
+            </li>
+            <li><a routerLink="/blog/details">تفاصيل الخبر</a></li>
+          </ul>
+        </li>
+        <li><a routerLink="contact-us">إتصل بنا</a></li>
+      </ul>
+
+    </div>
+  </div>

@@ -1,0 +1,45 @@
+<div
+  class="pbmit-title-bar-wrapper"
+  [style.backgroundImage]="'url(' + imgSrc + ')'"
+>
+  <div class="container">
+    <div class="pbmit-title-bar-content">
+      <div class="pbmit-title-bar-content-inner">
+        <div class="pbmit-tbar">
+          <div class="pbmit-tbar-inner container">
+            <h3 class="pbmit-tbar-subtitle" *ngIf="subtitle">
+              {{ subtitle[0] }}
+            </h3>
+            <h1 class="pbmit-tbar-title">{{ title }}</h1>
+          </div>
+        </div>
+
+        <div class="pbmit-breadcrumb">
+          <div class="pbmit-breadcrumb-inner">
+            <span>
+              <a title="" href="#" class="home"><span>أكس كير</span></a>
+            </span>
+            <ng-container *ngFor="let sub of subtitle">
+              <span class="sep">
+                <i class="pbmit-base-icon-angle-double-right"></i>
+              </span>
+              <span
+                ><span class="post-root post post-post current-item">{{
+                  sub
+                }}</span></span
+              >
+            </ng-container>
+            <span class="sep">
+              <i class="pbmit-base-icon-angle-double-right"></i>
+            </span>
+            <span
+              ><span class="post-root post post-post current-item">{{
+                title
+              }}</span></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

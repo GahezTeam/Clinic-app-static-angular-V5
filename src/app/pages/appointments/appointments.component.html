@@ -1,0 +1,117 @@
+<app-title-bar
+  title="حجز موعد"
+  imgSrc="/assets/images/bg/titlebar-bg-img.jpg"
+></app-title-bar>
+
+<!-- Make An Appointment Start -->
+<section class="section-xl">
+  <div class="container">
+    <div class="pbmit-heading-subheading text-center">
+      <h4 class="pbmit-subtitle">مع الوصول إلى</h4>
+      <h2 class="pbmit-title1">طوارئ 24 ساعة</h2>
+      <div class="pbmit-heading-desc">
+        تم تجهيز عيادتنا بالمرافق الحديثة والتكنولوجيا الطبية المتقدمة لضمان
+        تشخيصات دقيقة <br />
+        وعلاجات فعالة.هذا يمكّننا من تزويدك بأعلى مستوى من الرعاية.
+      </div>
+    </div>
+    <div class="appointment_box">
+      <h4 class="text-center mb-3">إحجز موعد</h4>
+      <form [formGroup]="bookingForm" (ngSubmit)="onSubmit(bookingForm.value)">
+        <div class="row">
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="الأسم *"
+              formControlName="patientName"
+              name="name"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              formControlName="email"
+              type="email"
+              class="form-control"
+              placeholder="البريد الإلكترونى *"
+              name="email"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              formControlName="phone"
+              type="tel"
+              class="form-control"
+              placeholder="الهاتف الجوال *"
+              name="phone"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              formControlName="date"
+              class="form-control wpcf7-form-control wpcf7-date wpcf7-validates-as-date"
+              aria-invalid="false"
+              value="2024-02-23"
+              type="date"
+              name="date-123"
+            />
+          </div>
+          <div class="col-md-6">
+            <select
+              formControlName="departmentId"
+              class="form-select form-control"
+              aria-label="Default select example"
+            >
+              <option value="Choose Department">اختر القسم</option>
+              <option value="Cardiology">أمراض القلب</option>
+              <option value="Dental Care">العناية بالأسنان</option>
+              <option value="Ophthalmology">طب العيون</option>
+              <option value="Gastrologist">أخصائي المعاد</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <select
+              formControlName="doctorId"
+              class="form-select form-control"
+              aria-label="Default select example"
+            >
+              <option value="Choose Doctor">اختر الطبيب</option>
+              <option value="Jordan Peele">الأردن بيل</option>
+              <option value="Norton Berry">نورتون بيري</option>
+              <option value="Clare Smyth">كلير سميث</option>
+              <option value="Jamie Oliver">جيمي أوليفر</option>
+              <option value="Carla Hall">قاعة كارلا</option>
+            </select>
+          </div>
+          <div class="col-md-12">
+            <textarea
+              formControlName="notes"
+              name="message"
+              cols="40"
+              rows="10"
+              class="form-control"
+              placeholder="اكتب رسالتك الأن ...."
+              required
+            ></textarea>
+          </div>
+          <div class="col-md-12">
+            <button class="pbmit-btn" [disabled]="bookingForm.invalid">
+              <span class="pbmit-button-text">أرسل الآن</span>
+              <span class="pbmit-button-icon-wrapper">
+                <span class="pbmit-button-icon">
+                  <i class="pbmit-base-icon-black-arrow-1"></i>
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- Make An Appointment End -->
+
+<app-clients></app-clients>
