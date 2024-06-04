@@ -54,6 +54,8 @@ export const routes: Routes = [
         (m) => m.ContactComponent,
       ),
   },
+  { path: 'gallery', loadComponent: () => import('./pages/gallery/gallery.component').then((m) => m.GalleryComponent) },
+
   ...BLOG_ROUTE,
   ...DOCTORS_ROUTE,
   ...DEPARTMENTS_ROUTE,
