@@ -7,61 +7,87 @@
 									</span>
     <ul class="navigation clearfix">
       <li class="active">
-        <a routerLink="/home">الرئيسية</a>
+        <a routerLink="/home"> {{ "MENU.HOME" | translate }}</a>
       </li>
       <li class="dropdown">
-        <a href="#">الصفحات</a>
+        <a href="#">{{ "MENU.PAGES" | translate }} </a>
         <ul>
-          <li><a routerLink="/about-us">من نحن</a></li>
-          <li><a routerLink="/our-history">تاريخنا</a></li>
-          <li><a routerLink="/classes">مواعيد العمل</a></li>
-          <li><a routerLink="/doctors/details">أعضاء الفريق الطبى</a></li>
-          <li><a routerLink="/team-single-detail">الدكترو احمد محمد</a></li>
-          <li><a routerLink="/make-appointments">حجز موعد</a></li>
-          <li><a routerLink="/faq">الأسئلة الشائعة</a></li>
+          <li><a routerLink="/about-us">{{ "MENU.ABOUT US" | translate }}</a></li>
+          <li><a routerLink="/our-history">{{ "MENU.OUR HISTORY" | translate }} </a></li>
+          <li><a routerLink="classes">{{ "MENU.CLASSES" | translate }}</a></li>
+          <li><a routerLink="our-team-member">{{ "MENU.OUR TEAM MEMBERS" | translate }}</a></li>
+          <li><a routerLink="team-single-detail">{{ "MENU.TEAM SINGLE DETAILS" | translate }}</a></li>
+          <li><a routerLink="make-appointments">{{ "MENU.MAKE AN APPOINTMENT" | translate }}</a></li>
+          <li><a routerLink="faq">{{ "MENU.FAQ" | translate }}</a></li>
         </ul>
       </li>
       <li class="dropdown">
-        <a href="#">الخدمات</a>
+
+        <a href="#">{{ "MENU.SERVICE" | translate }}</a>
         <ul>
-          <li><a routerLink="/service-details">تفاصيل الخدمة</a></li>
+          <li><a routerLink="/service-details">{{ "MENU.SINGLE DETAILS VIEW" | translate }}</a></li>
         </ul>
       </li>
       <li class="dropdown">
-        <a href="#">المعرض</a>
+        <a href="#">{{ "MENU.PORTFOLIO" | translate }}</a>
         <ul>
           <li class="dropdown">
-            <a href="#">طريق عرض المعرض</a>
+            <a href="#">{{ "MENU.MASONRY VIEW" | translate }}</a>
             <ul>
-              <li><a routerLink="/masonry-grid-col-4">عرض المعرض 4 أعمدة</a></li>
+              <li>
+                <a routerLink="/masonry-grid-col-4">{{ "MENU.MASONRY VIEW" | translate }}</a>
+              </li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#">عرض شبكي</a>
+            <a href="#">{{ "MENU.GRID VIEW" | translate }}</a>
             <ul>
-              <li><a routerLink="/portfolio-grid-col-4">عرض شبكى 4 اعمدة</a></li>
+              <li><a routerLink="/portfolio-grid-col-4">{{ "MENU.GRID VIEW" | translate }}</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#">نمط التفاصيل الفردية</a>
+            <a href="#">{{ "MENU.SORTABLE VIEW" | translate }}</a>
             <ul>
-              <li><a routerLink="/departments/details">نمط التفاصيل الفردية 01</a></li>
+              <li>
+                <a routerLink="/portfolio-sortable-grid-col-4"
+                >{{ "MENU.SORTABLE VIEW" | translate }}</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">{{ "MENU.SINGLE DETAILS VIEW" | translate }}</a>
+            <ul>
+              <li>
+                <a routerLink="/single-detail-style-01"
+                >{{ "MENU.SINGLE DETAILS VIEW" | translate }}</a
+                >
+              </li>
             </ul>
           </li>
         </ul>
       </li>
       <li class="dropdown">
-        <a href="#">الأخبار</a>
+        <a href="#">{{ "MENU.BLOG" | translate }}</a>
         <ul>
           <li class="dropdown">
-            <a href="#">عرض شبكى</a>
+            <a href="#">{{ "MENU.GRID VIEW" | translate }}</a>
             <ul>
-              <li><a routerLink="/blog-grid-4">عرض شبكى 4 اعمدة</a></li>
+              <li><a routerLink="/blog-grid-4">{{ "MENU.GRID VIEW" | translate }}</a></li>
             </ul>
           </li>
-          <li><a routerLink="/blog/details">تفاصيل الخبر</a></li>
+          <li class="dropdown">
+            <a href="#">{{ "MENU.SORTABLE VIEW" | translate }}</a>
+            <ul>
+              <li>
+                <a routerLink="/blog-sortable-col-4">{{ "MENU.SORTABLE VIEW" | translate }}</a>
+              </li>
+            </ul>
+          </li>
+          <li><a routerLink="/blog-classic">{{ "MENU.BLOG CLASSIC" | translate }}</a></li>
+          <li><a routerLink="/blog-details">{{ "MENU.BLOG DETAILS" | translate }}</a></li>
         </ul>
       </li>
-      <li><a routerLink="contact-us">إتصل بنا</a></li>
+      <li><a routerLink="contact-us">{{ "MENU.CONTACT" | translate }}</a></li>
     </ul>
   </div>

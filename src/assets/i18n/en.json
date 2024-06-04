@@ -1,0 +1,214 @@
+{
+  "MENU": {
+    "HOME": "HOME",
+    "PAGES": "PAGES",
+    "SERVICE": "SERVICE",
+    "PORTFOLIO": "PORTFOLIO",
+    "BLOG": "BLOG",
+    "CONTACT": "CONTACT",
+    "ABOUT US" : "ABOUT US",
+    "OUR HISTORY" : "OUR HISTORY",
+    "OUR TEAM MEMBERS" : "OUR TEAM MEMBERS",
+    "CLASSES" : "CLASSES",
+    "MAKE AN APPOINTMENT" : "MAKE AN APPOINTMENT",
+    "TEAM SINGLE DETAILS" : "TEAM SINGLE DETAILS",
+    "FAQ": "FAQ",
+    "SERVICE DETAILS": "SERVICE DETAILS",
+    "MASONRY VIEW": "MASONRY VIEW",
+    "GRID VIEW": "GRID VIEW",
+    "SORTABLE VIEW": "SORTABLE VIEW",
+    "SINGLE DETAILS VIEW": "SINGLE DETAILS VIEW",
+    "BLOG CLASSIC": "BLOG CLASSIC",
+    "BLOG DETAILS": "BLOG DETAILS",
+
+
+
+
+    "DASHBOARD": "Dashboard",
+    "NEWS": "News",
+    "TAGS": "Tags",
+    "COMMENTS": "Comments",
+    "BRANCHES": "Branches",
+    "DEPARTMENTS": "Departments",
+    "AUCTIONS": "Auctions",
+    "REALESTATETYPES": "Real Estate Types",
+    "REGIONS": "Regions",
+    "CITIES": "Cities",
+    "GALLARY": "Gallary",
+    "CONTACTUS": "Contact Us",
+    "SLIDER": "Slider",
+    "ALL": "All",
+    "CREATE": "Create",
+    "INFO": "Branches  Info",
+    "MESSAGES": "Messages",
+    "ALBUMS": "Albums",
+    "UPLOAD": "Upload",
+    "WORKDAYTIMES": "Work Days & Times",
+    "REVIEWS": "Reviews",
+    "NEWSLETTER": "Newsletter",
+    "SUBSCRIPTION": "Subscription",
+    "DOCTORS": "Doctors",
+    "SETTINGS": "Settings"
+  },
+  "AUCTIONS": {
+    "CREATE.TITLE": "Title",
+    "CREATE.STARTDATE": "Start Date",
+    "CREATE.ENDDATE": "End Date",
+    "CREATE.STARTTIME": "Start Time",
+    "CREATE.ENDTIME": "End Time",
+    "CREATE.DESCRIPTION": "Descrition",
+    "CREATE.REGIONS": "Select Region",
+    "CREATE.CITIES": "Select City",
+    "CREATE.DISTRICT": "District",
+    "CREATE.BROCHURE": "Upload Brochure",
+    "CREATE.CONDITIONS": "Upload Conditions",
+    "LIST.CITY": "City",
+    "LIST.STOPPED": "Stop",
+    "LIST.POSTPONED": "Postponed",
+    "DOWNLOADBROCHURE": "Download Brochure",
+    "DOWNLOADCONDITIONS": "Download Conditions",
+    "ATTACHMENTS": "Attachments"
+  },
+  "REALESTATE": {
+    "NEW": "New Real Estate",
+    "ADVANTAGES": "Advantages",
+    "VIDEOS": "Videos",
+    "IMAGES": "Images",
+    "TYPE": "Type",
+    "INSTRUMENTNO": "Instrument No",
+    "INSTRUMENTDATE": "Instrument Date ",
+    "AREA": "Area",
+    "PIECENO": "Piece NO",
+    "CHARTNO": "Chart No.",
+    "DIPOSIT": "Diposit",
+    "BORDERS": "Borders",
+    "EAST": "East ",
+    "WEST": "West ",
+    "NORTH": "North ",
+    "SOUTH": "South ",
+    "CREATE": {
+      "TYPE": "Select Type",
+      "INSTRUMENTNO": "Instrument No",
+      "INSTRUMENTDATE": "Instrument Date ",
+      "AREA": "Area",
+      "PIECENO": "Piece NO",
+      "CHARTNO": "Chart No.",
+      "DIPOSIT": "Diposit",
+      "WESTBORDER": "West Border",
+      "WESTBORDERLENGTH": "West Border Length",
+      "EASTBORDER": "East Border",
+      "EASTBORDERLENGTH": "East Border Length",
+      "NORTHBORDER": "North Border",
+      "NORTHBORDERLENGTH": "North Border Length",
+      "SOUTHBORDER": "South Border",
+      "SOUTHBORDERLENGTH": "South Border Length",
+      "SEARCHMAP": "Search Google Maps"
+    }
+  },
+  "BUTTONS": {
+    "SUBMIT": "Submit",
+    "EDIT": "Edit",
+    "SAVE": "Save Changes",
+    "DETAILS": "Details",
+    "DELETE": "Delete",
+    "CLOSE": "Close",
+    "APPROVE": "Approve",
+    "CREATE": "Create New"
+  },
+  "COMMON": {
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "TITLE": "Title",
+    "DESCRIPTION": "Description",
+    "MOBILE": "Mobile",
+    "CITY": "City",
+    "REGION": "Region",
+    "SELECTREGION": "Select Region",
+    "SELECTFILE": "Select File",
+    "IMAGE": "Image",
+    "NAMEPLACEHOLDER": "Enter Name",
+    "TITLEPLACEHOLDER": "Enter Title",
+    "VIEWDETAILS": "View Details",
+    "LIST": "All",
+    "EDIT": "Edit",
+    "CREATE": "Create",
+    "DETAILS": "Details",
+    "UPLOAD": "Upload"
+
+  },
+  "GALLARY": {
+    "ISVIDEO": "Is Video",
+    "ALBUM": "Album",
+    "CHOOSEALBUM": "Select Album",
+    "NEWABLUM": "New Album"
+  },
+  "CONTACT": {
+    "BRANCH": "Branch",
+    "SELECTBRANCH": "Select Branch",
+    "PHONE": "Phone",
+    "FAX": "Fax",
+    "ADDRESS": "Address",
+    "UNIFIEDNUMBER": "Unified Number",
+    "FIRSTNAME": "First Name",
+    "LASTNAME": "Last Name",
+    "CONTENT": "Content"
+  },
+  "BRANCHES": {
+    "ISPRIMARY": "Is Primary ?"
+  },
+  "NEWS": {
+    "ACTIVE": "Active",
+    "DEPARTMENT": "Department",
+    "TAGS": "Tags",
+    "PUBLISHEDDATE": "Published Date",
+    "SPECIAL": "Special",
+    "INACTIVE": "Inactive",
+    "BYDEPARTMENT": "By Department",
+    "HOME": "HOME",
+    "SUMMARY": "Summary",
+    "SELECTDEPARTMENT": "Select Department"
+  },
+  "HEADER": {
+    "CHANGEPASSWORD": "Change Password",
+    "ACCOUNT": "My Account",
+    "MANAGE": "Admin Info",
+    "LOGOUT": "Logout"
+  },
+  "WORKDAYTIMES": {
+    "WORKDAY": "Work Day",
+    "FIRSTSHIFT": "First Shift",
+    "SECONDSHIFT": "Second Shift"
+  },
+  "VALIDATION": {
+    "IMAGESIZE": "Image size should not exceed 5 MB.",
+    "LATLNGREQUIRED": "You should select the location on the map.",
+    "INVALIDINPUT": "You should enter valid data"
+  },
+  "DOCTORS": {
+    "JOBTITLE": "Job Title"
+  },
+  "REVIEWS": {
+    "TEXT": "Text",
+    "CAREER": "Career"
+  },
+  "CHANGEPASSWORD": {
+    "CURRENT": "Current Password",
+    "NEW": "New Password",
+    "CONFIRM": "Confirm New Password"
+  },
+  "SETTINGS": {
+    "LOGO": "Logo",
+    "PRIMARYCOLOR": "Primary Color",
+    "SECONDARYCOLOR": "Secondary Color",
+    "THIRDCOLOR": " Third Color",
+    "TWITTER": "Twitter",
+    "FACEBOOK": "Facebook",
+    "INSTAGRAM": "Instagram",
+    "SNAPCHAT": "Snapchat",
+    "YOUTUBE": "Youtube",
+    "WHATSAPP": "Whatsapp",
+    "CHOOSE_LOCATION": "Choose Location"    ,
+    "CLICK_TO_CHOOSE_LOCATION": "Click to choose location",
+    "SUBMIT": "Submit"
+  }
+}

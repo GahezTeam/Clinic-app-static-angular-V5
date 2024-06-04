@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+/* Bootstrap CSS */
+@import url("css/bootstrap.min.css");
+/* Fontawesome */
+@import url("css/fontawesome.css");
+/* Flaticon */
+@import url("css/flaticon.css");
+/* Base Icons */
+@import url("css/pbminfotech-base-icons.css");
+/* Themify Icons */
+@import url("css/themify-icons.css");
+/* Slick */
+@import url("css/swiper.min.css");
+/* Magnific */
+@import url("css/magnific-popup.css");
+/* AOS */
+@import url("css/aos.css");
+/* Shortcode CSS */
+/* @import url("./assets/css/shortcode.css"); */
+
+@import url("css/shortcode-rtl.css");
+
+/* Base CSS */
+
+/* @import url("./assets/css/base.css"); */
+@import url("css/base-rtl.css");
+
+/* Style CSS */
+/* @import url("./assets/css/style.css");*/
+@import url("css/rtl.css");
+/* Responsive CSS */
+
+/* @import url("./assets/css/responsive.css"); */
+@import url("css/responsive-rtl.css");
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+
+}

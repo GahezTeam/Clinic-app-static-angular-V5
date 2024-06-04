@@ -7,22 +7,238 @@
 <app-inbox></app-inbox>
 <!--Inbox End-->
 
-<app-contact-form></app-contact-form>
+<!-- Contact Form -->
+<section>
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-md-12 col-xl-6">
+        <div class="contact-us-left_img"></div>
+      </div>
+      <div class="col-md-12 col-xl-6">
+        <div class="contact-form-one_right pbmit-bg-color-white">
+          <div class="pbmit-heading-subheading">
+            <h4 class="pbmit-subtitle">اتصل بنا</h4>
+            <h2 class="pbmit-title1">
+              حدد موعدًا يتقدم بطلب للحصول على علاجات
+            </h2>
+          </div>
+          <form
+            class="contact-form"
+            id="contact-form"
+            [formGroup]="contactForm"
+            (ngSubmit)="onSubmit(contactForm.value)"
+          >
+            <div class="row">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="أسمك *"
+                  name="name"
+                  formControlName="name"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="بريدك الإلكترونى *"
+                  name="email"
+                  formControlName="email"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="رقم هاتفك *"
+                  name="phone"
+                  formControlName="phoneNumber"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="الموضوع"
+                  name="subject"
+                  formControlName="subject"
+                  required
+                />
+              </div>
+              <div class="col-md-12">
+                <textarea
+                  name="message"
+                  cols="40"
+                  rows="10"
+                  class="form-control"
+                  placeholder="الرسالة"
+                  formControlName="message"
+                  required
+                ></textarea>
+              </div>
+              <div class="col-md-12">
+                <button class="pbmit-btn" [disabled]="contactForm.invalid">
+                  <span class="pbmit-button-content-wrapper">
+                    <span class="pbmit-button-icon pbmit-align-icon-right">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22.76"
+                        height="22.76"
+                        viewBox="0 0 22.76 22.76"
+                      >
+                        <title>black-arrow</title>
+                        <path
+                          d="M22.34,1A14.67,14.67,0,0,1,12,5.3,14.6,14.6,0,0,1,6.08,4.06,14.68,14.68,0,0,1,1.59,1"
+                          transform="translate(-0.29 -0.29)"
+                          fill="none"
+                          stroke="#000"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          d="M22.34,1a14.67,14.67,0,0,0,0,20.75"
+                          transform="translate(-0.29 -0.29)"
+                          fill="none"
+                          stroke="#000"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          d="M22.34,1,1,22.34"
+                          transform="translate(-0.29 -0.29)"
+                          fill="none"
+                          stroke="#000"
+                          stroke-width="2"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="pbmit-button-text">أرسل الآن</span>
+                  </span>
+                </button>
+              </div>
+              <div class="col-md-12 col-lg-12 message-status"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Form End -->
 
 <!-- Client Start -->
 <app-clients></app-clients>
 <!-- Client End -->
 
-<!-- Map -->
-<section class="iframe_section section-lgb">
-  <div class="container-fluid">
-    <div class="iframe_box">
-      <iframe
-        src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"
-        title="London Eye, London, United Kingdom"
-        aria-label="London Eye, London, United Kingdom"
-      ></iframe>
+<div style="width: 100%">
+  <google-map
+    [options]="options"
+    width="100%"
+  >
+    <map-marker
+      #marker="mapMarker"
+      *ngFor="let mark of markers"
+      [position]="mark.position"
+      [title]="mark.title"
+      (mapClick)="openInfoWindow(marker)"
+    ></map-marker>
+    <map-info-window>{{ markerInfoContent }}</map-info-window>
+  </google-map>
+</div>
+ google-maps-demo.component.html
+
+<section class="contact__location-area pb-130 pt-110">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-5 col-lg-7 offset-xl-1 col-md-8">
+        <div class="tp-section-wrapper-2 mb-35">
+          <span class="tp-section-subtitle-2 subtitle-mb-9">مواقعنا</span>
+          <h3 class="tp-section-title-2 font-40">تفضل بزيارة مكاتبنا حول العالم</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-xl-12 ">
+        <div class="contact__location-wrapper">
+          <div class="contact__location-item">
+            <div class="row align-items-center">
+              <div class="col-lg-9 col-md-8 col-sm-7">
+                <div class="contact__location-content d-lg-flex align-items-center">
+
+                  <h3 class="contact__location-title">مكتب مصر</h3>
+
+                  <div class="contact__location-info d-sm-flex flex-wrap align-items-center">
+                    <div class="contact__location-icon mr-45">
+                      <img src="/assets/images/contact-location-3.png" alt="">
+                    </div>
+                    <div class="contact__location-content">
+                      <p><a href="mailto:contact.location@website.com">contact.location&#64;website.com</a></p>
+                      <p><a href="tel:686-324-6838">686-324-6838</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-5">
+                <div class="contact__location-btn text-sm-end">
+                  <a href="https://www.google.com/maps/place/102+Thompson+St,+New+York,+NY+10012,+USA/@40.7255437,-74.004061,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2598c338f691d:0x6d5f394e7a1962cc!8m2!3d40.7255397!4d-74.0018723" target="_blank" class="tp-btn-border">view location</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact__location-item">
+            <div class="row align-items-center">
+              <div class="col-lg-9 col-md-8 col-sm-7">
+                <div class="contact__location-content d-lg-flex align-items-center">
+
+                  <h3 class="contact__location-title">مكتب السعودية</h3>
+
+                  <div class="contact__location-info d-sm-flex flex-wrap align-items-center">
+                    <div class="contact__location-icon mr-45">
+                      <img src="/assets/images/kaabah.png" alt="">
+                    </div>
+                    <div class="contact__location-content">
+                      <p><a href="mailto:contact.location@website.com">contact.location&#64;website.com</a></p>
+                      <p><a href="tel:686-324-6838">686-324-6838</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-5">
+                <div class="contact__location-btn text-sm-end">
+                  <a href="https://www.google.com/maps/place/102+Thompson+St,+New+York,+NY+10012,+USA/@40.7255437,-74.004061,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2598c338f691d:0x6d5f394e7a1962cc!8m2!3d40.7255397!4d-74.0018723" target="_blank" class="tp-btn-border">view location</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact__location-item">
+            <div class="row align-items-center">
+              <div class="col-lg-9 col-md-8 col-sm-7">
+                <div class="contact__location-content d-lg-flex align-items-center">
+
+                  <h3 class="contact__location-title">مكتب الإمارات</h3>
+
+                  <div class="contact__location-info d-sm-flex flex-wrap align-items-center">
+                    <div class="contact__location-icon mr-45">
+                      <img src="/assets/images/burj-khalifa.png" alt="">
+                    </div>
+                    <div class="contact__location-content">
+                      <p><a href="mailto:contact.location@website.com">contact.location&#64;website.com</a></p>
+                      <p><a href="tel:686-324-6838">686-324-6838</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-5">
+                <div class="contact__location-btn text-sm-end">
+                  <a href="https://www.google.com/maps/place/102+Thompson+St,+New+York,+NY+10012,+USA/@40.7255437,-74.004061,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2598c338f691d:0x6d5f394e7a1962cc!8m2!3d40.7255397!4d-74.0018723" target="_blank" class="tp-btn-border">view location</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<!--Map-->

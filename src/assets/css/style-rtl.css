@@ -41,7 +41,7 @@ body {
 	width: 19.333%;
 }
 .about-one_img{
-	background-image: url(/assets/images/homepage-1/bg/about-img-01.jpg);
+	background-image: url(../images/homepage-1/bg/about-img-01.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,7 +81,7 @@ body {
 	padding-top: 55px;
 }
 .service-one_bg{
-	background-image: url(/assets/images/homepage-1/bg/service-bg-pattern.png);
+	background-image: url(../images/homepage-1/bg/service-bg-pattern.png);
     background-position: top center;
     background-repeat: no-repeat;
 	overflow: hidden;
@@ -106,7 +106,7 @@ body {
 	padding: 0 60px;
 }
 .ihbox-style-17_bg{
-	background-image: url(/assets/images/homepage-1/bg/bg-01.jpg);
+	/*background-image: url(../images/homepage-1/bg/bg-01.jpg);*/
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -149,7 +149,7 @@ body {
     width: auto;
     z-index: 1;
     overflow: hidden;
-	background-image: url(/assets/images/homepage-1/bg/contact-form-bg.jpg);
+	background-image: url(../images/homepage-1/bg/contact-form-bg.jpg);
     border-radius: 0px;
     background-color: transparent;
     background-position: 50% 50%;
@@ -243,7 +243,7 @@ body {
     top: 0;
     right: 0;
     position: absolute;
-	background-image: url(/assets/images/homepage-2/bg/bg-img-01.png);
+	background-image: url(../images/homepage-2/bg/bg-img-01.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -317,7 +317,7 @@ body {
 	padding-left: 70px;
 }
 .tab_section{
-	background-image: url(/assets/images/homepage-2/bg/service-bg-pattern.png);
+	background-image: url(../images/homepage-2/bg/service-bg-pattern.png);
 	background-position: top center;
     background-repeat: no-repeat;
 }
@@ -471,7 +471,7 @@ body {
 }
 .ihbox-style-4_bg{
 	margin-left: 20px;
-	background-image: url(/assets/images/homepage-2/bg/bg-01.jpg);
+	/*background-image: url(../images/homepage-2/bg/bg-01.jpg);*/
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -481,7 +481,7 @@ body {
 .pbmit-ihbox-style-5_bg{
 	margin-right: 20px;
 	padding: 0px 65px 0px 52px;
-	background-image: url(/assets/images/homepage-2/bg/bg-pattern.png);
+	/*background-image: url(../images/homepage-2/bg/bg-pattern.png);*/
     background-position: bottom left;
     background-repeat: no-repeat;
 	border-radius: 30px;
@@ -609,7 +609,7 @@ form .pbmit-footer-newsletter button:hover .pbmit-button-icon {
 	border-top: 1px solid #D8E1EB;
 }
 .service-three_bg{
-	background-image: url(/assets/images/homepage-3/bg/service-bg-pattern.png);
+	background-image: url(../images/homepage-3/bg/service-bg-pattern.png);
     background-position: top center;
     background-repeat: no-repeat;
 	border-radius: 50px;
@@ -621,7 +621,7 @@ form .pbmit-footer-newsletter button:hover .pbmit-button-icon {
     top: 0;
     right: 0;
     position: absolute;
-	background-image: url(/assets/images/homepage-3/bg/service-bg-plus.png);
+	background-image: url(../images/homepage-3/bg/service-bg-plus.png);
     background-position: right 1400px top 150px;
     background-repeat: no-repeat;
     opacity: 1;
@@ -632,7 +632,7 @@ form .pbmit-footer-newsletter button:hover .pbmit-button-icon {
 }
 .testimonial-three_bg,
 .testimonial-six-bg{
-	background-image: url(/assets/images/homepage-3/bg/testimonial-bg.jpg);
+	background-image: url(../images/homepage-3/bg/testimonial-bg.jpg);
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -645,7 +645,7 @@ form .pbmit-footer-newsletter button:hover .pbmit-button-icon {
 }
 /** Homepage 04 **/
 .about-four-img img{
-	mask-image: url(/assets/images/homepage-4/bg/about-shape.png);
+	mask-image: url(../images/homepage-4/bg/about-shape.png);
     mask-size: contain;
     mask-position: center center;
     mask-repeat: no-repeat;
@@ -682,14 +682,14 @@ form .pbmit-footer-newsletter button:hover .pbmit-button-icon {
 }
 .testimonial-four-bg{
 	border-radius: 30px;
-	background-image: url(/assets/images/homepage-4/bg/testimonial-background.png);
+	background-image: url(../images/homepage-4/bg/testimonial-background.png);
 	color: var(--pbmit-white-color);
 	background-color: var(--pbmit-global-color);
 	overflow: inherit;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 }
 .testimonial-left-img{
-	background-image: url(/assets/images/homepage-4/testimonial-img.jpg);
+	background-image: url(../images/homepage-4/testimonial-img.jpg);
 	background-repeat: no-repeat;
     background-size: cover;
 	border-radius: 30px;
@@ -743,7 +743,7 @@ form .pbmit-footer-newsletter button:hover .pbmit-button-icon {
 }
 .appointment-five-bg{
 	padding: 52px 55px 45px 40px;
-	background-image: url(/assets/images/homepage-5/bg/appointment-bg.png);
+	background-image: url(../images/homepage-5/bg/appointment-bg.png);
     background-position: center left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -765,7 +765,7 @@ form .pbmit-footer-newsletter button:hover .pbmit-button-icon {
 	justify-content: center;
 }
 .why-choose-us-five-bg{
-	background-image: url(/assets/images/homepage-5/bg/service-bg-pattern.png);
+	background-image: url(../images/homepage-5/bg/service-bg-pattern.png);
     background-position: top right;
     background-repeat: no-repeat;
 }
@@ -791,7 +791,7 @@ form .pbmit-footer-newsletter button:hover .pbmit-button-icon {
 	padding-bottom: 30px;
 }
 .discount-plan-bg{
-	background-image: url(/assets/images/homepage-5/bg/doctor-bg.png);
+	background-image: url(../images/homepage-5/bg/doctor-bg.png);
     background-position: bottom left;
     background-repeat: no-repeat;
 	padding-top: 30px;
@@ -818,10 +818,10 @@ form .pbmit-footer-newsletter button:hover .pbmit-button-icon {
 	margin-top: -20px;
 }
 .demo-six .about-one_img {
-	background-image: url(/assets/images/homepage-6/about-img-1.jpg);
+	background-image: url(../images/homepage-6/about-img-1.jpg);
 }
 .who-we-are-section-six{
-	background-image: url(/assets/images/homepage-6/bg/service-bg-pattern.png);
+	background-image: url(../images/homepage-6/bg/service-bg-pattern.png);
     background-position: top right;
     background-repeat: no-repeat;
 }
@@ -852,7 +852,7 @@ form .pbmit-footer-newsletter button:hover .pbmit-button-icon {
 	padding: 90px 60px 0px 50px;
 }
 .testimonial-six-bg{
-	background-image: url(/assets/images/homepage-6/bg/testimonial-bg-01.jpg);
+	/*background-image: url(../images/homepage-6/bg/testimonial-bg-01.jpg);*/
 }
 /** Homepage 07 **/
 .ihbox-style-30-box {
@@ -865,7 +865,7 @@ form .pbmit-footer-newsletter button:hover .pbmit-button-icon {
     z-index: 1;
 }
 .demo-seven .ihbox-style-17_bg{
-	background-image: url(/assets/images/homepage-7/bg/cta-bg-img.jpg);
+	/*background-image: url(../images/homepage-7/bg/cta-bg-img.jpg);*/
 }
 .contact-us-seven .pbmit-left-col{
 	width: 45%;
@@ -877,13 +877,13 @@ form .pbmit-footer-newsletter button:hover .pbmit-button-icon {
 	padding: 100px 80px 100px 80px;
 }
 .contact-us-seven{
-	background-image: url(/assets/images/homepage-7/bg/pattern-bg.png);
+	background-image: url(../images/homepage-7/bg/pattern-bg.png);
 	background-repeat: repeat;
 	border-radius: 30px;
 	overflow: hidden;
 }
 .contact-us-seven-img{
-	background-image: url(/assets/images/homepage-7/contact-form-img.jpg);
+	background-image: url(../images/homepage-7/contact-form-img.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -904,7 +904,7 @@ form .pbmit-footer-newsletter button:hover .pbmit-button-icon {
 }
 /** Homepage 08 **/
 .demo-eight .about-one_img{
-	background-image: url(/assets/images/homepage-8/about-img.jpg);
+	background-image: url(../images/homepage-8/about-img.jpg);
 }
 .ihbox-eight-area{
 	padding-top: 65px;
@@ -927,7 +927,7 @@ form .pbmit-footer-newsletter button:hover .pbmit-button-icon {
 	overflow: hidden;
 }
 .our-service-eight-imgbox{
-	background-image: url(/assets/images/homepage-8/bg/service-img.jpg);
+	background-image: url(../images/homepage-8/bg/service-img.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -970,7 +970,7 @@ form .pbmit-footer-newsletter button:hover .pbmit-button-icon {
 }
 /** 02 - Our History **/
 .history_section{
-	background-image: url(/assets/images/bg/timeline-bg.png);
+	background-image: url(../images/bg/timeline-bg.png);
 }
 .pbmit-element-timeline-style-1 .pbmit-timeline-wrapper .pbmit-timeline-year {
 	font-size: 18px;
@@ -1026,6 +1026,7 @@ form .pbmit-footer-newsletter button:hover .pbmit-button-icon {
 	bottom: 0;
 	top: 0;
 	left: 0;
+	height: -moz-fit-content;
 	height: fit-content;
 	margin: auto !important;
 }
@@ -1691,7 +1692,7 @@ form .pbmit-footer-newsletter button:hover .pbmit-button-icon {
 	padding: 0;
 	overflow: hidden;
 	position: relative;
-	background-image: url(/assets/images/bg/ads-bg-img.jpg);
+	background-image: url(../images/bg/ads-bg-img.jpg);
 	background-size: cover;
     background-position: center center;
 }
@@ -2193,7 +2194,7 @@ aside.widget.widget-tag-cloud a:hover{
 .pbmit-team-single .pbmit-team-detail .pbmit-team-detail-inner{
 	padding: 45px 38px 70px;
     background-color: var(--pbmit-blackish-color);
-    background-image: url(/assets/images/bg/detail-pattern.png);
+    background-image: url(../images/bg/detail-pattern.png);
     background-position: bottom center;
     background-repeat: repeat;
 	border-radius: 0 0 30px 30px;
@@ -2447,7 +2448,7 @@ aside.widget.widget-tag-cloud a:hover{
 }
 /** 07 - Contact Us **/
 .contact-us-left_img{
-	background-image: url(/assets/images/bg/contact-form-bg.jpg);
+	background-image: url(../images/bg/contact-form-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
