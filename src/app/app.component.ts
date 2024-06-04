@@ -29,17 +29,21 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    // @ts-ignore
+// @ts-ignore
     localStorage.getItem('userLang') ? this.currentLang = localStorage.getItem('userLang') : this.currentLang = 'ar';
-    if (this.currentLang == 'ar') {
-      this.doc.body.dir = 'rtl';
-      // @ts-ignore
-      this.doc.getElementById('changeStyle').setAttribute('href', 'assets/styles.ar.css');
-    } else {
-      this.doc.body.dir = 'ltr';
-      // @ts-ignore
-      this.doc.getElementById('changeStyle').setAttribute('href', 'assets/styles.en.css');
-    }
+
+    this.translate.onLangChange.subscribe((l) => {
+      if (l.lang == 'ar') {
+        this.doc.body.dir = 'rtl';
+        // @ts-ignore
+        this.doc.getElementById('changeStyle').setAttribute('href', 'assets/styles.ar.css');
+      } else {
+        this.doc.body.dir = 'ltr';
+        // @ts-ignore
+        this.doc.getElementById('changeStyle').setAttribute('href', 'assets/styles.en.css');
+
+      }
+    });
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => this.loadScripts());
